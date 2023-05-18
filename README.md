@@ -52,9 +52,9 @@ $ docker run -it operon:v1 /bin/bash
 $ docker start -i <container-id> /bin/bash
 ```
 
-<small>
+<sup><sub>
 **Note:** Before creating a new container, you may want to check if you already have a container with the necessary configuration (make sure to check if you already have a suitable container before creating a new one using the `docker container ls -a` command). Running multiple containers unnecessarily can consume disk space over time. If you have a suitable existing container, you can use the `docker start` command (mentioned in step 2.B) to open a bash shell in that container instead of creating a new one.
-</small>
+</sub></sup>
 
 3. Inside the shell, you will find the compiled Operon files and executables inside the `result` directory at `/home/operon/result`. You can use these files as needed for your projects. If you want to exit the docker container shell, use the `exit` command.
 
